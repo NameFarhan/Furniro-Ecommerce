@@ -1,9 +1,11 @@
 import "./App.css";
-import { Button } from "@mui/material";
+
+
+import Home from "./Pages/Home/Home";
 function App() {
   return(
     <>
-    
+    <Home/>
     </>
   )
 }
