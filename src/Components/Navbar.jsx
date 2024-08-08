@@ -26,13 +26,13 @@ const Navbar = () => {
           sx={{
             height: 60,
             width: 42,
-            marginRight:'10px'
+            marginRight:'15px'
           }}
           alt="Logo"
           src={logo}
         />
         <Typography sx={{ fontSize: "34px", fontWeight: "900" }}>
-          Furniro
+          Ecommerce
         </Typography>
         </Box>
       </Box>
