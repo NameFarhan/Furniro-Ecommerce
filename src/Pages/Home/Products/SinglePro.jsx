@@ -2,7 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import IconCheckboxes from "../../../muiComponents/Love";
 
 const SinglePro = ({ data, truncateText }) => {
-  return (
+  return (``
     <Box sx={{ padding: { xs: '0 10px', sm: '0 20px', md: '0 30px' } }}>
       <Grid container spacing={3}>
         {data.map((product) => (
@@ -29,12 +29,13 @@ const SinglePro = ({ data, truncateText }) => {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    display: 'block', // Ensures no extra space below the image
+                    display: 'flex',
+                    margin: 'auto',
                     '@media (max-width:600px)': {
-                      height: '150px', // Adjust height for extra small screens
+                      height: '150px',
                     },
                     '@media (max-width:400px)': {
-                      height: '120px', // Further adjust height for very small screens
+                      height: '120px',
                     },
                   }}
                   alt={product.title}
@@ -61,7 +62,7 @@ const SinglePro = ({ data, truncateText }) => {
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                 }}>
-                  {truncateText(product.title, 3)} {/* Truncate the title to 3 words */}
+                  {truncateText(product.title, 3)}
                 </Typography>
                 <Typography sx={{
                   color: '#898989',
@@ -73,7 +74,7 @@ const SinglePro = ({ data, truncateText }) => {
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                 }}>
-                  {truncateText(product.description, 4)} {/* Truncate the description to 4 words */}
+                  {truncateText(product.description, 4)}
                 </Typography>
                 <Typography sx={{
                   color: '#3A3A3A',
@@ -113,13 +114,13 @@ const SinglePro = ({ data, truncateText }) => {
                   fontSize: '16px',
                   fontWeight: '600',
                   width: '202px',
-                  textTransform:'none',
+                  textTransform: 'none',
                   height: '48px',
                   '&:hover': {
                     backgroundColor: '#fff',
                     boxShadow: '0'
                   }
-                }} variant="contained">Add to cart</Button>
+                }}  variant="contained">Add to cart</Button>
                 <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '8px' }}>
                   <IconCheckboxes />
                   <Typography sx={{ color: '#fff', marginLeft: '4px' }}>Like</Typography>
